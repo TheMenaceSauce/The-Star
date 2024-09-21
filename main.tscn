@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://sqn7uejveosc"]
+[gd_scene load_steps=25 format=3 uid="uid://sqn7uejveosc"]
 
 [ext_resource type="Texture2D" uid="uid://cu4xbds0cyrno" path="res://Petra.png" id="1_py4v1"]
 
@@ -49,6 +49,30 @@ region = Rect2(1248, 0, 48, 80)
 [sub_resource type="AtlasTexture" id="AtlasTexture_igc7j"]
 atlas = ExtResource("1_py4v1")
 region = Rect2(1296, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5feg"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(0, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8vh3"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(48, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbjwf"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(96, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qiyx0"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(144, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yx2st"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(192, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8pni"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(240, 0, 48, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nwjws"]
 atlas = ExtResource("1_py4v1")
@@ -116,6 +140,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_i5feg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p8vh3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbjwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qiyx0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yx2st")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8pni")
+}],
+"loop": true,
+"name": &"new_animation_2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_nwjws")
 }, {
 "duration": 1.0,
@@ -143,5 +190,4 @@ texture_filter = 1
 position = Vector2(712, 448)
 scale = Vector2(2.85417, 2.85417)
 sprite_frames = SubResource("SpriteFrames_87tmv")
-animation = &"walking"
-frame_progress = 0.947759
+animation = &"new_animation_2"
