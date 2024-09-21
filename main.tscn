@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://sqn7uejveosc"]
+[gd_scene load_steps=31 format=3 uid="uid://sqn7uejveosc"]
 
 [ext_resource type="Texture2D" uid="uid://cu4xbds0cyrno" path="res://Petra.png" id="1_py4v1"]
 
@@ -49,6 +49,30 @@ region = Rect2(1248, 0, 48, 80)
 [sub_resource type="AtlasTexture" id="AtlasTexture_igc7j"]
 atlas = ExtResource("1_py4v1")
 region = Rect2(1296, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtvui"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(288, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7i0kg"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(336, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ch76d"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(384, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdgs4"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(432, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5pmw"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(480, 0, 48, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ed0sl"]
+atlas = ExtResource("1_py4v1")
+region = Rect2(528, 0, 48, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i5feg"]
 atlas = ExtResource("1_py4v1")
@@ -112,7 +136,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_24vjn")
 }],
 "loop": true,
-"name": &"new_animation",
+"name": &"Sitting",
 "speed": 12.0
 }, {
 "frames": [{
@@ -135,7 +159,30 @@ animations = [{
 "texture": SubResource("AtlasTexture_igc7j")
 }],
 "loop": true,
-"name": &"new_animation_1",
+"name": &"Sitting Talking",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtvui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7i0kg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ch76d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdgs4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5pmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ed0sl")
+}],
+"loop": true,
+"name": &"Standing Talking",
 "speed": 12.0
 }, {
 "frames": [{
@@ -158,8 +205,8 @@ animations = [{
 "texture": SubResource("AtlasTexture_i8pni")
 }],
 "loop": true,
-"name": &"new_animation_2",
-"speed": 5.0
+"name": &"idle",
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -190,4 +237,5 @@ texture_filter = 1
 position = Vector2(712, 448)
 scale = Vector2(2.85417, 2.85417)
 sprite_frames = SubResource("SpriteFrames_87tmv")
-animation = &"new_animation_2"
+animation = &"Standing Talking"
+frame_progress = 0.155558
