@@ -234,16 +234,8 @@ animations = [{
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 texture_filter = 1
-position = Vector2(712, 448)
+position = Vector2(746, 471)
 scale = Vector2(2.85417, 2.85417)
 sprite_frames = SubResource("SpriteFrames_87tmv")
-animation = &"idle"
-frame_progress = 0.805843
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="ColorRect2" type="ColorRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+animation = &"Sitting Talking"
+frame_progress = 0.839266
