@@ -246,6 +246,7 @@ offset_top = 445.0
 offset_right = 1178.0
 offset_bottom = 499.0
 
+<<<<<<< HEAD
 [node name="name" type="Label" parent="UI/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 35
@@ -281,3 +282,12 @@ frame_progress = 0.485285
 position = Vector2(579.5, 539.5)
 scale = Vector2(4.02439, 1.25568)
 texture = ExtResource("2_ol8dc")
+=======
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(746, 471)
+scale = Vector2(2.85417, 2.85417)
+sprite_frames = SubResource("SpriteFrames_87tmv")
+animation = &"Sitting Talking"
+frame_progress = 0.839266
+>>>>>>> a1d2772c58dd3562cfd6569842f3a2511570e69f
